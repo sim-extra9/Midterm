@@ -1,0 +1,413 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color: #4891ff;
+  --light-color:#f4f4f6;
+  --dark-color: #111;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+ul{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+}
+/* Navbar*/
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.navbar ul li a:hover{
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.navbar ul li:last-child{
+  margin-left: 10px ;
+}
+.navbar ul li a i{
+  margin-right: 10px;
+}
+/* Hero */
+.hero{
+  margin-bottom: 50px;
+}
+.hero .container{
+  background: url('../../images/hero-bg.png') no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+}
+.hero .hero-content{
+  width: 70%;
+}
+.hero .hero-text{
+  width: 70%;
+  margin-bottom: 20px;
+}
+/*Video*/
+.video{
+  padding: 10px 0 40px;
+}
+.video-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video-preview{
+  margin-bottom: 20px;
+}
+/*Testimonials*/
+.testimonials{
+  padding: 40px 0;
+}
+.testimonials .testimonials-heading{
+  width: 700px;
+  margin-bottom: 40px;
+}
+.testimonials-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px ;
+}
+.testimonials .card p:nth-child(2){
+  margin-top: 30px;
+  font-weight: bold;
+}
+/* Utility Class */
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-sm{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/*Button*/
+.btn{
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.btn-primary{
+  background: var(--primary-color);
+  color: #fff;
+}
+.btn-dark{
+  background: var(--dark-color);
+  color: #fff;
+}
+.btn-block{
+  display: block;
+  width: 100%;
+}
+/* Text class*/
+.text-xxl{
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+.text-xl{
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+.text-md{
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+.text-sm{
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+.text-center{
+  text-align: center;
+}
+/*Background*/
+.bg-primary{
+  background: var(--primary-color);
+  color: #fff;
+}
+.bg-light{
+  background: var(--light-color);
+  color: #333;
+}
+.bg-dark{
+  background: var(--dark-color);
+  color: #fff;
+}
+.bg-black{
+  background: rgb(15, 14, 14);
+  color: #fff;
+}
+/* Card*/
+.card{
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+
+
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  left: -100;
+  width: 320px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  visibility: hidden; /* Add this line */
+}
+
+.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-info h3 {
+  font-weight: 500;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 15px 0;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin: 12px 0;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 20px;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  margin-left: 20px
+}
+
+#profileButton {
+  position: relative;
+}
+.profile-image {
+  width: 40px;  /* You can adjust this value */
+  height: 40px; /* This should match the width for a perfect circle */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#profileButton {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#profileButton a {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: max-height 0.5s ease-in-out;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+  visibility: visible;
+}
+
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+}
+
+  
+
+/* Mobile phones (min-width: 480px) */
+@media (max-width: 480px) {
+  .navbar .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar .main-menu ul {
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  .navbar ul li {
+      width: 100%;
+  }
+
+  .sub-menu-wrap {
+      width: 100%;
+  }
+
+  /* Adjust font sizes for smaller screens */
+  body {
+      font-size: 14px;
+  }
+
+  .text-xxl {
+      font-size: 1.8rem;
+  }
+
+  .text-xl {
+      font-size: 1.4rem;
+  }
+
+  .text-md {
+      font-size: 1rem;
+  }
+
+  .text-sm {
+      font-size: 0.8rem;
+  }
+}
